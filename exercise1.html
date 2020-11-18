@@ -11,8 +11,8 @@
         /* box-shadow: 10px 10px 5px grey; */
         border-radius: 25px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding: 10px 20px 30px 40px;
-        margin: 50px;
+        padding: 10px 20px 30px 30px;
+        margin: 55px;
         background-image: url('sea2.jpg') ;
         background-size: 100% 100%;
         /* background-attachment: fixed; */
@@ -22,7 +22,7 @@
     }
 
     body{
-        background-image: url('sea1.jpg');
+        background-image: url('maldive-islands-04.jpeg');
         background-size: 100% 100%;
         background-attachment: fixed;
     }
@@ -30,10 +30,11 @@
     p{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 10px;
-        text-align: left ;
+        text-align: center ;
         text-shadow: 2px 2px 5px whitesmoke;
     }
     .button {
+
         background-color: #555555; /* Green */
         border: none;
         color: white;
@@ -45,17 +46,18 @@
         margin: 4px 2px;
         cursor: pointer;
         transition-duration: 0.4;
-        width: 150px;
-        border-radius: 5px;
+        width: 100px;
+        border-radius: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .button1{
-        background-color: white;
-        color: black;
+        background-color: aqua;
+        color: blue;
         border: 2px solid #555555;
     }
     .button1:hover{
-        background-color: #555555;
-        color: white;
+        background-color:midnightblue;
+        color: aqua;
     }
     h1{
         animation-name: example;
@@ -65,13 +67,13 @@
     @keyframes example{
         0%  {color: white;}
         25% {color: aqua;}
-        50% {color: yellow;}
-        75% {color: peru;}
-        100% {color: indigo;}
+        50% {color: aquamarine;}
+        75% {color: cornflowerblue;}
+        100% {color: dodgerblue;}
     }
     input{
         padding: 5px;
-        border-radius: 10px;
+        border-radius: 15px;
         
     }
 
@@ -79,22 +81,23 @@
 </head>
 <body>
     <center>
+        
         <center>
             <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Welcome To BuBu Island</h1>
         </center>
-        <div class="outset">
+        <div>
             <h2 style="font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Sign Up</h2>
-                <p >Username</p>
-                <input type="text" name="" id="username" placeholder="Enter Username">
-                <p>Email</p>
-                <input type="text" name="" id="email" placeholder="Enter Email">
-                <p>Password</p>
-                <input type="password" name="" id="password" placeholder="*****">
-                <p>Confirm Password</p>
-                <input type="password" name="" id="cPassword" placeholder="*****">
-                <br><br>
+
+                <p><input type="text" name="" id="username" placeholder="Username"></p>
+                <p><input type="text" name="" id="email" placeholder="Email"></p>
+                <p><input type="password" name="" id="password" placeholder="Password"></p>
+                <p><input type="password" name="" id="cPassword" placeholder="Confirm Password"></p>
                 <button class="button button1" onclick="showList()">Register</button>
+                
+                <p>or sign up with</p>
+                <p><img src="twitter.jpg" width="30" height="30"> <img src="instagram.jpg" width="30" height="30"> <img src="facebook1.jpg" width="30" height="30"></p>
         </div>
+            
     </center>
     
 </body>
