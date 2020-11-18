@@ -11,7 +11,7 @@
         /* box-shadow: 10px 10px 5px grey; */
         border-radius: 25px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding: 10px 20px 30px 30px;
+        padding: 10px 20px 10px 30px;
         margin: 55px;
         background-image: url('sea2.jpg') ;
         background-size: 100% 100%;
@@ -32,6 +32,9 @@
         font-size: 10px;
         text-align: center ;
         text-shadow: 2px 2px 5px whitesmoke;
+    }
+    .button2 {
+        cursor: pointer;
     }
     .button {
 
@@ -76,6 +79,14 @@
         border-radius: 15px;
         
     }
+    .astext {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
 
     </style>
 </head>
@@ -85,7 +96,7 @@
         <center>
             <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Welcome To BuBu Island</h1>
         </center>
-        <div>
+        <div id="signin">
             <h2 style="font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Sign Up</h2>
 
                 <p><input type="text" name="" id="username" placeholder="Username"></p>
@@ -93,9 +104,17 @@
                 <p><input type="password" name="" id="password" placeholder="Password"></p>
                 <p><input type="password" name="" id="cPassword" placeholder="Confirm Password"></p>
                 <button class="button button1" onclick="showList()">Register</button>
-                
+                <p id="success" style="color: green;"></p>
+                <p id="fail" style="color: red;"></p>
                 <p>or sign up with</p>
-                <p><img src="twitter.jpg" width="30" height="30"> <img src="instagram.jpg" width="30" height="30"> <img src="facebook1.jpg" width="30" height="30"></p>
+                <p><button class="button2" type="submit" style="border: 0; background: transparent">
+                    <img src="twitter.jpg" width="30" height="30" alt="subm;it"></button>
+                    <button class="button2" type="submit" style="border: 0; background: transparent">
+                    <img src="instagram.jpg" width="30" height="30"></button>
+                    <button class="button2" type="submit" style="border: 0; background: transparent">
+                    <img src="facebook1.jpg" width="30" height="30"></button></p>
+                <p> <button class="astext" style="font-size: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" onclick="signin()" id="signinbutton">Click Here For Sign In</button> </p>
+                <!-- <a href="exercise1signin.html" class="button2" style="font-size: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Click Here For Sign In</a> -->
         </div>
             
     </center>
@@ -113,16 +132,26 @@
     if(password == cPassword){
         alert('Welcome to The Island')
         a ="true"
+        return document.getElementById('success').innerHTML = `Success`
     }
     else{
         alert("Wrong Password")
         a = "false"
+        return document.getElementById('fail').innerHTML =`Wrong Password, Try Again`
     }
     console.log(a)
     console.log(username)
     console.log(email)
     console.log(password)
     console.log(cPassword)
+    }
+    function signin(){
+        return document.getElementById('signin').innerHTML = 
+        `<h2 style="font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Sign In</h2>
+            <p><input type="text" name="" id="username" placeholder="Username"></p>
+            <p><input type="password" name="" id="password" placeholder="Password"></p>
+            <a class="button button1" href="exercise1signin.html" id="welcome">Sign In</a>
+        `
     }
 </script>
 </html>
