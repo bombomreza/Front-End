@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="content" id="sort" >
-        <div class="div1 border" onclick="satu()"></div>
-        <div class="div2 border" onclick="dua()"></div>
-        <div class="div3 border" onclick="tiga()"></div>
-        <div class="div4 border" onclick="empat()"></div>
-        <div class="div5 border" onclick="lima()"></div>
+        <div class="div border" onclick="satu()" style="height: 250px;"></div>
+        <div class="div border" onclick="dua()" style="height: 100px;"></div>
+        <div class="div border" onclick="tiga()" style="height: 300px;"></div>
+        <div class="div border" onclick="empat()" style="height: 150px;"></div>
+        <div class="div border" onclick="lima()" style="height: 200px;"></div>
     </div>
     <button onclick="sorting()">Sorting</button>
     <button onclick="star()">Click Here</button>
@@ -35,20 +35,20 @@
         }
         function sorting(){
             return document.getElementById('sort').innerHTML = `
-        <div class="div2 border" onclick="dua()"></div>
-        <div class="div4 border" onclick="empat()"></div>
-        <div class="div5 border" onclick="lima()"></div>
-        <div class="div1 border" onclick="satu()"></div>
-        <div class="div3 border" onclick="tiga()"></div>
+        <div class="div border" onclick="dua()"  style="height: 100px;"></div>
+        <div class="div border" onclick="empat()" style="height: 150px;"></div>
+        <div class="div border" onclick="lima()" style="height: 200px;"></div>
+        <div class="div border" onclick="satu()" style="height: 250px;"></div>
+        <div class="div border" onclick="tiga()" style="height: 300px;"></div>
             `
         }
         function star(){
             return document.getElementById('sort').innerHTML =`
-        <div class="div1 border" onclick="satu()"></div>
-        <div class="div2 border" onclick="dua()"></div>
-        <div class="div3 border" onclick="tiga()"></div>
-        <div class="div4 border" onclick="empat()"></div>
-        <div class="div5 border" onclick="lima()"></div>      
+        <div class="div border" onclick="satu()" style="height: 250px;"></div>
+        <div class="div border" onclick="dua()" style="height: 100px;"></div>
+        <div class="div border" onclick="tiga()" style="height: 300px;"></div>
+        <div class="div border" onclick="empat()" style="height: 150px;"></div>
+        <div class="div border" onclick="lima()" style="height: 200px;"></div>      
             `
         }
     </script>

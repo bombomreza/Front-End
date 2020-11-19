@@ -5,30 +5,8 @@
     border-color: aqua;
     padding: 20px;
 }
-
-.div1{
+.div{
     width: 10%;
-    height: 250px;
-    background-color: chartreuse;
-}
-.div2{
-    width: 10%;
-    height: 100px;
-    background-color: chartreuse;
-}
-.div3{
-    width: 10%;
-    height: 300px;
-    background-color: chartreuse;
-}
-.div4{
-    width: 10%;
-    height: 150px;
-    background-color: chartreuse;
-}
-.div5{
-    width: 10%;
-    height: 200px;
     background-color: chartreuse;
 }
 .border:hover{
