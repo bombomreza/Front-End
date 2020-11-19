@@ -1,0 +1,45 @@
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .custom-btn{
+            color: white;
+            padding: 10px;
+            outline: none;
+            border-radius: 15px;
+            outline-style: none;
+            outline-width: 0;
+        }
+        #idButton{
+            color: white;
+            padding: 20px;
+            background-color: black;
+            border-radius: 15px;
+
+        }
+        .header{
+            background-color: red;
+            text-align: center;
+        }
+
+        .red {
+            background-color: red;
+        }
+        .teal{
+            background-color: teal;
+        }
+        .content-container{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+            margin: 20px 0px 20px;
+        }
+        .center{
+            justify-content: center;
+        }
+        .space-between{
+            justify-content: space-between;
+        }
+        .space-around{
+            justify-content: space-around;
+        }

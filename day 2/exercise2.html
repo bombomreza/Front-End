@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content" id="sort" >
+        <div class="div1 border" onclick="satu()"></div>
+        <div class="div2 border" onclick="dua()"></div>
+        <div class="div3 border" onclick="tiga()"></div>
+        <div class="div4 border" onclick="empat()"></div>
+        <div class="div5 border" onclick="lima()"></div>
+    </div>
+    <button onclick="sorting()">Sorting</button>
+    <button onclick="star()">Click Here</button>
+</body>
+    <script>
+        function satu(){
+            alert("80%")
+        }
+        function dua(){
+            alert("20%")
+        }
+        function tiga(){
+            alert('100%')
+        }
+        function empat(){
+            alert("40%")
+        }
+        function lima(){
+            alert("60%")
+        }
+        function sorting(){
+            return document.getElementById('sort').innerHTML = `
+        <div class="div2 border" onclick="dua()"></div>
+        <div class="div4 border" onclick="empat()"></div>
+        <div class="div5 border" onclick="lima()"></div>
+        <div class="div1 border" onclick="satu()"></div>
+        <div class="div3 border" onclick="tiga()"></div>
+            `
+        }
+        function star(){
+            return document.getElementById('sort').innerHTML =`
+        <div class="div1 border" onclick="satu()"></div>
+        <div class="div2 border" onclick="dua()"></div>
+        <div class="div3 border" onclick="tiga()"></div>
+        <div class="div4 border" onclick="empat()"></div>
+        <div class="div5 border" onclick="lima()"></div>      
+            `
+        }
+    </script>
+</html>
