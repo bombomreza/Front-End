@@ -53,3 +53,141 @@
         }
     </script>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2-2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0%;
+        }
+
+        .square {
+            width: 200px;
+            background-color: teal;
+        }
+
+        .square:hover {
+            background-color: tomato;
+        }
+
+        .content-container {
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            margin: 30px 0px;
+            align-items: baseline;
+        }
+
+        .space-around {
+            justify-content: space-evenly;
+        }
+
+        .s1 {
+            height: 70%;
+        }
+
+        .s2 {
+            height: 30%;
+        }
+
+        .s3 {
+            height: 90%;
+        }
+
+        .s4 {
+            height: 20%;
+        }
+
+        .s5 {
+            height: 50%;
+        }
+
+        .randm {
+            background-color: coral;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .randm:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-container space-around" id="box">
+        <div class="square s1" id="satu" onclick="out1()"></div>
+        <div class="square s2" id="dua" onclick="out2()"></div>
+        <div class="square s3" id="tiga" onclick="out3()"></div>
+        <div class="square s4" id="empat" onclick="out4()"></div>
+        <div class="square s5" id="lima" onclick="out5()"></div>
+    </div>
+    <button onclick="urut()" class="randm">Urutkan!</button>
+    <button onclick="backk()" class="randm">Kembali!</button>
+</body>
+
+<script>
+    var heightbox = [];
+    var box1 = document.getElementById("satu").clientHeight;
+    var box2 = document.getElementById("dua").clientHeight;
+    var box3 = document.getElementById("tiga").clientHeight;
+    var box4 = document.getElementById("empat").clientHeight;
+    var box5 = document.getElementById("lima").clientHeight;
+
+    function urut() {
+        heightbox.push(box1);
+        heightbox.push(box2);
+        heightbox.push(box3);
+        heightbox.push(box4);
+        heightbox.push(box5);
+
+        heightbox.sort((a, b) => a - b);
+
+        return (
+            document.getElementById("satu").style.height = `${heightbox[0]}` + "px",
+            document.getElementById("dua").style.height = `${heightbox[1]}` + "px",
+            document.getElementById("tiga").style.height = `${heightbox[2]}` + "px",
+            document.getElementById("empat").style.height = `${heightbox[3]}` + "px",
+            document.getElementById("lima").style.height = `${heightbox[4]}` + "px"
+        )
+    }
+
+    function backk() {
+        return (
+            document.getElementById("satu").style.height = `${box1}` + "px",
+            document.getElementById("dua").style.height = `${box2}` + "px",
+            document.getElementById("tiga").style.height = `${box3}` + "px",
+            document.getElementById("empat").style.height = `${box4}` + "px",
+            document.getElementById("lima").style.height = `${box5}` + "px"
+        )
+    }
+
+    function out1() {
+        var box1 = ((document.getElementById("satu").clientHeight) * 100 / (document.getElementById("box").clientHeight));
+        return alert("Height: " + box1 + "%");
+    }
+    function out2() {
+        var box2 = (document.getElementById("dua").clientHeight) * 100 / (document.getElementById("box").clientHeight);
+        return alert("Height: " + box2 + "%");
+    }
+    function out3() {
+        var box3 = (document.getElementById("tiga").clientHeight) * 100 / (document.getElementById("box").clientHeight);
+        return alert("Height: " + box3 + "%");
+    }
+    function out4() {
+        var box4 = (document.getElementById("empat").clientHeight) * 100 / (document.getElementById("box").clientHeight);
+        return alert("Height: " + box4 + "%");
+    }
+    function out5() {
+        var box5 = (document.getElementById("lima").clientHeight) * 100 / (document.getElementById("box").clientHeight);
+        return alert("Height: " + box5 + "%");
+    }
+</script>
+
+</html> -->
