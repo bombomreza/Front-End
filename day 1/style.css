@@ -43,3 +43,8 @@
         .space-around{
             justify-content: space-around;
         }
+        .spacetitle{
+            height: 300px;
+            width: 100%;
+            background-color: brown;
+        }

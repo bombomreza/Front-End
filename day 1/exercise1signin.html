@@ -1,150 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        [class*="col-"] {
-            float: left;
-            padding: 15px;
-        }
-        html {
-            font-family: "Lucida Sans", sans-serif;
-        }
-        .header {
-            background-color: white;
-            color: #ffffff;
-            padding: 0px;
-        }
-        .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        .menu li {
-            padding: 8px;
-            margin-bottom: 7px;
-            background-color: #33b5e5;
-            color: #ffffff;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        }
-        .menu li:hover {
-            background-color: #0099cc;
-        }
-        .aside {
-            background-color: #33b5e5;
-            padding: 15px;
-            color: #ffffff;
-            text-align: center;
-            font-size: 14px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        }
-        .footer {
-            background-color: #0099cc;
-            color: #ffffff;
-            text-align: center;
-            font-size: 12px;
-            padding: 15px;
-        }
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
     
-        @media only screen and (min-width: 768px) {
-            /* For desktop: */
-            .col-1 {
-                width: 8.33%;
-            }
-            .col-2 {
-                width: 16.66%;
-            }
-            .col-3 {
-                width: 25%;
-            }
-            .col-4 {
-                width: 33.33%;
-            }
-            .col-5 {
-                width: 41.66%;
-            }
-            .col-6 {
-                width: 50%;
-            }
-            .col-7 {
-                width: 58.33%;
-            }
-            .col-8 {
-                width: 66.66%;
-            }
-            .col-9 {
-                width: 75%;
-            }
-            .col-10 {
-                width: 83.33%;
-            }
-            .col-11 {
-                width: 91.66%;
-            }
-            .col-12 {
-                width: 100%;
-            }
-        }
+<style>
         body{
-        background-image: url('maldive-islands-04.jpeg');
+        background-image: url('Kandolhu-Island-North-Ari-Atoll-Kandolhudhoo-Maldives-island-with-white-sandy-beaches-diving-direct-access-to-beach-open-bathrooms.jpg');
         background-size: 100% 100%;
         background-attachment: fixed;
     }
-    </style>
+    .centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    }
+    .container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 75%;
+  padding: 20px;
+}
+</style>
 </head>
+
 <body>
-
-<!-- <div class="header">
-    <img src="bubulogo.jpg" width="100px" height="100px" alt="">
- 
-</div> -->
-
-<div class="row">
-    <div class="col-1">
-        <img src="bubulogo.jpg" width="100px" height="100px" alt="">
-    </div>
-    <div class="col-6">
-        Menu
-    </div>
-    <!-- <div class="col-3 col-s-3 menu">
-        <ul>
-            <li>The Flight</li>
-            <li>The City</li>
-            <li>The Island</li>
-            <li>The Food</li>
+<nav class="navbar navbar-expand-lg navbar-light bg-transparant ml-5" >
+    <a class="navbar-brand" href="#">
+        <img src="logo1.png" width="70" height="70" class="d-inline-block align-top"
+            alt="" loading="lazy">  
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse col-mr-9 ml-auto" id="navbarNav">
+        <ul class="navbar-nav ml-auto h5" style="font-family: DinPro,sans-serif;" >
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">Plan</a>
+            </li>
+            <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">Stay</a>
+            </li>
+            <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">Places</a>
+            </li>
+            <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">Experiences </a>
+            </li>
+            <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">Boms</a>
+            </li>
+            <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">Map</a>
+            </li>
+            <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">Corporate</a>
+            </li>
         </ul>
     </div>
-
-    <div class="col-6 col-s-9">
-        <h1>The City</h1>
-        <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the
-            old town and the modern city.</p>
-    </div>
-
-    <div class="col-3 col-s-12">
-        <div class="aside">
-            <h2>What?</h2>
-            <p>Chania is a city on the island of Crete.</p>
-            <h2>Where?</h2>
-            <p>Crete is a Greek island in the Mediterranean Sea.</p>
-            <h2>How?</h2>
-            <p>You can reach Chania airport from all over Europe.</p>
+    <form class="form-inline" style="font-family:DinPro,sans-serif ; margin-right: 20px;">
+        <input class="form-control mr-sm-2" type="search" placeholder="Find something.." aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+    </form>
+</nav>
+<div class="mx-auto" style="width: 500px;">
+    <center>
+        <div style="padding-top: 10px; color:white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;"> 
+        If you got anywhere, even paradise, you will miss Buba Island
         </div>
-    </div> -->
+        <button type="button" class="btn btn-secondary" style="border-radius: 15px;">Read More</button>
+        <button type="button" class="btn btn-dark" style="border-radius: 15px;">Explore</button>
+    </center>
 </div>
+<div style="background-color: transparent; height: 100px; width: 100%;">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-">
+            <div class="container">
+                <img src="https://visitmaldives.s3.amazonaws.com/NQoQQDov/c/topdlile-portrait.jpg" style="height: 250px; width: auto; border-radius: 5vh;" alt="" style="width: 300px; height: 300px;">
+                <div class="centered">
+                    <div class="card-image-overlay">
+                        THRILLING SIDE OF LIFE
 
-<!-- <div class="footer">
-    <p>Resize the browser window to see how the content respond to the resizing.</p>
-</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-">
+            <div class="container">
+                <img src="https://visitmaldives.s3.amazonaws.com/EKo2XYQe/c/nd6m90sn-portrait.jpg"
+                    style="height: 250px; width: auto; border-radius: 5vh;" alt="" style="width: 300px; height: 300px;">
+                <div class="centered">
+                    FUN SIDE OF LIFE
+                </div>
+            </div>
+        </div>
+        <div class="col-">
+            <div class="container">
+                <img src="https://visitmaldives.s3.amazonaws.com/Z3qlnwXe/c/4oexfmey-portrait.jpg"
+                    style="height: 250px; width: auto; border-radius: 5vh;" alt="" style="width: 300px; height: 300px;">
+                <div class="centered">
+                    COLORFUL SIDE OF LIFE
+                </div>
+            </div>
+        </div>
+        <div class="col-">
+            <div class="container">
+                <img src="https://visitmaldives.s3.amazonaws.com/vgo0KqZB/c/3sejl561-portrait.jpg"
+                    style="height: 250px; width: auto; border-radius: 5vh;" alt="" style="width: 300px; height: 300px;">
+                <div class="centered">
+                    SPIRITUAL SIDE OF LIFE
+                </div>
+            </div>
+        </div>
+        <div class="col-">
+            <div class="container">
+                <img src="https://visitmaldives.s3.amazonaws.com/7jqJMY5Q/c/tlj4zj0j-portrait.jpg"
+                    style="height: 250px; width: auto; border-radius: 5vh;" alt="" style="width: 300px; height: 300px;">
+                <div class="centered">
+                    BUBAVIAN SIDE OF LIFE
+                </div>
+            </div>
+        </div>
+        <div class="col-">
+            <div class="container">
+                <img src="https://visitmaldives.s3.amazonaws.com/QEoA9o9L/c/usjsvd6z-portrait.jpg"
+                    style="height: 250px; width: auto; border-radius: 5vh;" alt="" style="width: 300px; height: 300px;">
+                <div class="content">
+                    ROMANTIC SIDE OF LIFE
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <img src="sea2.jpg" class="rounded float-left" alt="...">
+<img src="..." class="rounded float-right" alt="..."> -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col">
+            
+        </div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div> -->
 </body>
+
 </html>
