@@ -1,4 +1,5 @@
-import NavigationBar from './NavigationBar'
-import ProductCard from './ProductCard'
+import NavigationBar from "./NavigationBar";
+import ProductCard from "./ProductCard";
+import HistoryModal from './HistoryModal'
 
-export {NavigationBar, ProductCard}
+export { NavigationBar, ProductCard, HistoryModal };
